@@ -82,21 +82,22 @@ In this exercise you will take the ASP.NET MVC web application you created in th
 
     > **Note:** If the Azure Management Portal pops up a message asking if you want to navigate to the updated Azure Management Portal answer no.
 
-  1. In the left-hand navigation, click **Active Directory**.
+  1. In the left-hand navigation, click **Active Directory**. (RS: In the left-hand navigation, click **Azure Active Directory**)
   1. Select the directory you share with your Office 365 subscription.
-  1. Locate and select the **Applications** tab on the header/options bar.
+  1. Locate and select the **Applications** tab on the header/options bar. (RS: Locate and Select the **Enterprise Applications**)
   1. Search for the application with the **ida:ClientId** that was created in exercise 1 and open it. You can find the Client ID by opening the web.config file at the root of the solution.
 
     ![](Images/ClientId.png)
 
     ![](Images/SearchApplication.png)
-  1. Click the application, then click the **Configure** tab
-  1. Scroll down to the **permissions to other applications** section. 
+  1. Click the application, then click the **Configure** tab (RS: Click the **All applications** tab, then Click your application with the applicationID from **ida:ClientID**)
+  1. Scroll down to the **permissions to other applications** section.
   1. Click the **Add Application** button.
-  1. In the **Permissions to other applications** dialog, click the **PLUS** icon next to the **Microsoft Graph** option.
-  1. Click the **CHECK** icon in the lower right corner.
+  1. In the **Permissions to other applications** dialog, click the **PLUS** icon next to the **Microsoft Graph** option. (RS: Click the **+ New application** icon on the top)
+  1. Click the **CHECK** icon in the lower right corner. (RS: Click on **Application you're developing**, then click on your Application) 
+  1. (RS: Click on **Required permissions**.  Click on the **PLUS** to **Add** an API.  **Select an API**)
   1. For the new **Microsoft Graph** application permission entry, select the **Delegated Permissions** dropdown on the same line and then select the following permissions:
-    * **Read user calendars**    
+    * **Read user calendars**   
   1. Click the **Save** button at the bottom of the page.
 
      ![Screenshot](Images/AzurePermission.png)
